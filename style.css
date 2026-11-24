@@ -1,0 +1,427 @@
+/* General */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080d18;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondos */
+
+.fondo,
+.pagina-contenido {
+    background-image: url("imagenes/vacio.jpg");
+}
+
+/* Principal */
+
+.portada {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.portada img {
+    width: 105px;
+    height: auto;
+    object-fit: contain;
+}
+
+.portada h1 {
+    color: white;
+    font-size: 25px;
+}
+
+/* Navegacion */
+
+.navegacion header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.navegacion nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navegacion nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navegacion nav a:hover {
+    color: red;
+}
+
+/* Datos */
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    width: 90%;
+    margin: 100px auto;
+    gap: 30px;
+}
+
+/* Logos */
+
+.logo-fisi,
+.logo-unap {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Informacion central */
+
+.informacion {
+    flex: 1;
+    text-align: center;
+}
+
+.informacion h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.informacion p {
+    color: white;
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+/* Contenido paginas */
+
+.parrafo main {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.parrafo section {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.parrafo h2 {
+    margin-bottom: 15px;
+}
+
+.parrafo section h2 {
+    color: #e6c68c;
+    font-size: 27px;
+    border-bottom: 2px solid #a58b61;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.parrafo section h3 {
+    color: #d9bd8c;
+    margin: 25px 0 15px;
+}
+
+.parrafo p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.parrafo section p {
+    color: #eeeeee;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* imagen a la derecha */
+
+.parrafo img {
+    float: right;
+    width: 280px;
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+    margin: 5px 0 15px 25px;
+}
+
+
+/* portada y audio */
+
+.parrafo .portada-audio {
+    float: right;
+    width: 300px;
+    margin: 5px 0 20px 25px;
+}
+
+.parrafo .portada-audio img {
+    display: block;
+    float: none;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.parrafo .portada-audio audio {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* imagenes general */
+
+.parrafo img.imagen-tema {
+    float: none;
+    display: block;
+    width: 750px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 30px auto;
+}
+
+
+/* videos general*/
+
+.parrafo video,
+.contenedor-video video {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 25px auto;
+}
+
+.contenedor-video {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+}
+
+
+/* titulos introduccion*/
+
+.titulo-contenido {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.introduccion {
+    color: white;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* tarjetas */
+
+.tarjetas-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.tarjeta {
+    background-color: #000000;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: none;
+}
+
+.tarjeta:hover {
+    transform: none;
+    border-color: #333333;
+}
+
+
+/* imagenes - tarjetas*/
+
+.tarjeta img {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 180px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+
+/* texto - tarjetas */
+
+.tarjeta h3 {
+    color: #e6c68c;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #eeeeee;
+    font-size: 15px !important;
+    text-align: center !important;
+    line-height: 1.6;
+}
+
+/* enlaces - fuentes*/
+
+.parrafo a {
+    color: #d9bd8c;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.3s;
+}
+
+.parrafo a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* tablets */
+
+@media (max-width: 850px) {
+
+    .tarjetas-habilidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sinergias {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* pantallas pequeñas */
+
+@media (max-width: 700px) {
+
+    .navegacion header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegacion nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .datos {
+        flex-direction: column;
+        margin: 40px auto;
+        gap: 25px;
+    }
+
+    .logo-fisi,
+    .logo-unap {
+        width: 120px;
+        height: 120px;
+    }
+
+    .informacion h1 {
+        font-size: 24px;
+    }
+
+    .informacion p {
+        font-size: 16px;
+    }
+
+    .portada h1 {
+        font-size: 20px;
+    }
+}
+
+
+/* celulares */
+
+@media (max-width: 550px) {
+
+    .tarjetas-habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-contenido {
+        font-size: 25px;
+    }
+
+    .tarjeta img {
+        height: 130px;
+    }
+
+    .parrafo section {
+        padding: 12px;
+    }
+
+    .parrafo section h2 {
+        font-size: 22px;
+    }
+
+    .parrafo section p {
+        font-size: 16px;
+    }
+
+    .parrafo img {
+        float: none;
+        display: block;
+        width: 90%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .parrafo img.imagen-tema {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .parrafo .portada-audio {
+        float: none;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .parrafo .portada-audio img {
+        width: 280px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .parrafo video,
+    .contenedor-video video {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+}
